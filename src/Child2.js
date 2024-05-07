@@ -86,7 +86,7 @@ class Child2 extends Component {
         .attr("x", d => x_scale(d[0]) + x_scale.bandwidth() / 2)
         .attr("y", d => y_scale(d[1]) - 5)
         .attr("text-anchor", "middle")
-        .text(d => (h - y_scale(d[1])).toFixed(2));
+        .text(d => y_scale(d[1]).toFixed(2));
   }
   render() {
     return (
